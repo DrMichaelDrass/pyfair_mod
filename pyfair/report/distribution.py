@@ -30,7 +30,7 @@ class FairDistributionCurve(FairBaseCurve):
     >>> dc = pyfair.report.FairDistributionCurve(m) 
 
     """
-    def __init__(self, model_or_iterable, currency_prefix='Euro'):
+    def __init__(self, model_or_iterable, currency_prefix=r'\texteuro'):
         self._input = self._input_check(model_or_iterable)
         self._currency_prefix = currency_prefix
 
