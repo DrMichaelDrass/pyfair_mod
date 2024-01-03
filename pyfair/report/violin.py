@@ -46,6 +46,6 @@ class FairViolinPlot(FairBaseCurve):
         ax.axes.xaxis.set_ticklabels(columns)
         ax.axes.xaxis.set_ticks([item for item in range(1, len(columns) + 1)])
         ax.set_title('Components And Aggregate Risk', fontsize=20)
-        ax.axes.yaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('${x:,.0f}'))
+        ax.axes.yaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('€{x:,.0f}'))
         plt.subplots_adjust(left=.2)
         return (fig, ax)
