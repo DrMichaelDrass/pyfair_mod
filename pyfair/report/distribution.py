@@ -99,7 +99,10 @@ class FairDistributionCurve(FairBaseCurve):
         fig, ax = plt.subplots(figsize=(16, 6))
         plt.subplots_adjust(bottom=.2)
         ax.axes.set_title('Risk Distribution', fontsize=20)
+        
         # Format X axis
+        # Format X axis for logarithmic scale
+        ax.set_xscale('log')
         ax.axes.xaxis.set_major_formatter(StrMethodFormatter('€{x:,.0f}'))
         ax.axes.xaxis.set_tick_params(rotation=-45)
         ax.set_ylabel('Frequency Histogram')
