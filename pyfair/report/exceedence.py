@@ -64,7 +64,7 @@ class FairExceedenceCurves(FairBaseCurve):
         # Plot
         ax.plot(quantiles, space)
         # Style
-        y_formatter = matplotlib.ticker.StrMethodFormatter(self._currency_prefix + '{x:,.0f}')
+        y_formatter = matplotlib.ticker.StrMethodFormatter('€{x:,.0f}')
         ax.axes.yaxis.set_major_formatter(y_formatter)
         x_formatter = matplotlib.ticker.StrMethodFormatter('{x:,.0f}%')
         ax.axes.xaxis.set_major_formatter(x_formatter)
@@ -76,7 +76,7 @@ class FairExceedenceCurves(FairBaseCurve):
         ax.plot(space, loss_expectancy)
         # Style
         ax.axes.yaxis.set_major_formatter(StrMethodFormatter('{x:,.0f}%'))
-        ax.axes.xaxis.set_major_formatter(StrMethodFormatter(self._currency_prefix + '{x:,.0f}'))
+        ax.axes.xaxis.set_major_formatter(StrMethodFormatter('€{x:,.0f}'))
         ax.axes.xaxis.set_tick_params(rotation=-45)
         for tick in ax.axes.xaxis.get_major_ticks():
             tick.label1.set_horizontalalignment('left')
