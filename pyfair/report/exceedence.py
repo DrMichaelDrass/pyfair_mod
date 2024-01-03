@@ -17,7 +17,7 @@ from ..report.base_curve import FairBaseCurve
 class FairExceedenceCurves(FairBaseCurve):
     """Plots one or more exceedence curves"""
 
-    def __init__(self, model_or_iterable, currency_prefix=r'\texteuro'):
+    def __init__(self, model_or_iterable, currency_prefix='\u20AC'):
         # If it's just a model, make it a list.
         super().__init__()
         self._currency_prefix = currency_prefix
