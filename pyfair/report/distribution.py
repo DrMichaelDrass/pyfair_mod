@@ -102,7 +102,7 @@ class FairDistributionCurve(FairBaseCurve):
         
         # Format X axis
         # Format X axis for logarithmic scale
-        ax.set_xscale('log')
+        # ax.set_xscale('log')
         ax.axes.xaxis.set_major_formatter(StrMethodFormatter('€{x:,.0f}'))
         ax.axes.xaxis.set_tick_params(rotation=-45)
         ax.set_ylabel('Frequency Histogram')
