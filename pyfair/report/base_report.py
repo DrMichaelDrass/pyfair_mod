@@ -29,7 +29,7 @@ class FairBaseReport(object):
     instantiated on its own.
 
     """
-    def __init__(self, currency_prefix=r'\texteuro'):
+    def __init__(self, currency_prefix='\u20AC'):
         # Add formatting strings
         self._currency_prefix = currency_prefix
         self._model_or_models = None
