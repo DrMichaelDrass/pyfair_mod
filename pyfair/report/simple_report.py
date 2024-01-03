@@ -25,7 +25,7 @@ class FairSimpleReport(FairBaseReport):
     >>> fsr.generate_html('output.html')
 
     """
-    def __init__(self, model_or_models, currency_prefix=r'\texteuro'):
+    def __init__(self, model_or_models, currency_prefix='\u20AC'):
         super().__init__(currency_prefix=currency_prefix)
         self._currency_prefix = currency_prefix
         self._model_or_models = self._input_check(model_or_models)
